@@ -2,7 +2,12 @@
 
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Install homebrew.
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 brew install httpie     # curl replacement
 brew install bat        # cat replacement
