@@ -9,7 +9,7 @@ brew "bat"
 brew "exa"
 brew "httpie"
 
-# Casks
+# Casks (Applications)
 cask "google-chrome"
 cask "google-chrome-canary"
 cask "iterm2"
