@@ -19,3 +19,6 @@ fi
 
 # Install brews & casks mentioned in Brewfile
 brew bundle --verbose
+
+# To update brewfile run the following command in `.dotfiles` folder.
+# brew bundle dump --force --describe
