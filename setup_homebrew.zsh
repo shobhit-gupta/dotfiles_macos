@@ -9,11 +9,5 @@ if [[ $? != 0 ]] ; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-brew install httpie     # curl replacement
-brew install bat        # cat replacement
-
-brew install --cask --no-quarantine google-chrome
-brew install --cask --no-quarantine visual-studio-code
-
-brew tap homebrew/cask-versions
-brew install --cask --no-quarantine google-chrome-canary
+# Install brews & casks mentioned in Brewfile
+brew bundle --verbose
